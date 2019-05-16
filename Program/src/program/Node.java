@@ -6,7 +6,7 @@ public class Node {
     Node rightChild;
     private int key;
     public Node(int input){
-        System.out.println("node created");
+//        System.out.println("node created");
         key = input;
     }
     public void setRightChild (Node temp){

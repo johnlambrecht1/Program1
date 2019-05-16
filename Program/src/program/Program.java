@@ -24,6 +24,8 @@ public class Program {
                     split[i] = Integer.parseInt(splitstring[i]);
                     System.out.println(split[i]);
                 }
+                System.out.println("What would you like to do?");
+                System
                 int j = 0;
                 mytree = new tree();
                 while (j<split.length){
