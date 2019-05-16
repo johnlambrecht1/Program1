@@ -12,6 +12,7 @@ import java.util.Scanner;
 
 public class Program {
     public static void main(String[] args){
+        tree mytree;
         Scanner sc;
         try {
             sc = new Scanner(new File("input.txt"));
@@ -22,6 +23,11 @@ public class Program {
                 for (int i = 0; i < splitstring.length; i++) {
                     split[i] = Integer.parseInt(splitstring[i]);
                     System.out.println(split[i]);
+                }
+                int j = 0;
+                mytree = new tree();
+                while (j<split.length){
+                    mytree.buildTree(split[j]);
                 }
             }
         } catch (FileNotFoundException e) {
