@@ -28,10 +28,11 @@ public class Program {
                 mytree = new tree();
                 while (j<split.length){
                     mytree.buildTree(split[j]);
+                    j++;
                 }
             }
         } catch (FileNotFoundException e) {
-            System.out.println("error");
+            System.out.println("file error");
         }
 
     }

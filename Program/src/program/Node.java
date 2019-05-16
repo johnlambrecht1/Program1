@@ -27,4 +27,7 @@ public class Node {
     public Node getRightChild(){
         return rightChild;
     }
+    public int getKey(){
+        return key;
+    }
 }
