@@ -23,6 +23,9 @@ public class Node {
     public void setKey(int temp){
         key = temp;
     }
+    public void setDepth(int temp){
+        depth = temp;
+    }
     public Node getParent (){
         return parent;
     }

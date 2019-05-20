@@ -1,6 +1,7 @@
 package program;
 
 import com.sun.net.httpserver.Authenticator;
+import java.util.Collections;
 
 public class tree {
     Node parent;
@@ -57,11 +58,41 @@ public class tree {
     void printtree(){
         Node printroot = getRoot();
         int depth = maxdepth(printroot);
+        printNode(printroot, 1, depth);
+    }
+    void makeArray(Node node){
+        
+    }
+    void printNode(Node node, int level, int depth){
+        int floor = depth-level;
+        int lines = (int) Math.pow(2, (Math.max(floor-1,0)));
+        int startSpaces = (int) Math.pow(2, (floor))-1;
+        int betweenSpaces=(int) Math.pow(2, (floor+1))-1;
+        printWhitespaces(startSpaces);
 
 
     }
+
+    void printWhitespaces(int count){
+        for (int i = 0; i<count; i++){
+            System.out.print(" ");
+        }
+    }
     int maxdepth(Node node){
-        
+        if (node == null){
+            return 0;
+        }
+        int left=maxdepth(node.getLeftChild());
+        int right = maxdepth(node.getRightChild());
+        return Math.max(left,right)+1;
+    }
+    void assignDepth(Node node){
+        if (node == null){
+            return;
+        }
+        assignDepth(node.getLeftChild());
+        assignDepth(node.getRightChild());
+        node.getDepth();
     }
     Node getRoot(){
         while (root.getParent()!=null){

@@ -33,7 +33,7 @@ public class Program {
                 int choice = 0;
                 while (choice != -1){
                     System.out.println("What would you like to do?");
-                    System.out.println("Press 1 to print the tree");
+                    System.out.println("1 Would've been print tree, but couldn't figure it out");
                     System.out.println("Press 2 to insert a node");
                     System.out.println("Press 3 to delete a node");
                     System.out.println("Press 4 to search for a node");
@@ -45,7 +45,7 @@ public class Program {
                     choice = reader.nextInt();
                     switch(choice){
                         case 1:
-                            System.out.println("Printing tree");
+                            System.out.println("I tried to get tree printing to work, but couldn't figure it out");
                             break;
                         case 2:
                             System.out.println("Please enter the number to enter");
